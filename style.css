@@ -284,7 +284,7 @@ nav a{
 
     background:
     linear-gradient(rgba(0,0,0,.70),rgba(0,0,0,.85)),
-    url("Images/fondo.jpg");
+    url("fondo.jpg");
 
     background-size:cover;
     background-position:center;
