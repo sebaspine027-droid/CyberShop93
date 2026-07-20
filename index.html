@@ -21,7 +21,7 @@ src="https://www.facebook.com/tr?id=1248549090456517&ev=PageView&noscript=1"
 /></noscript>
 <!-- End Meta Pixel Code -->
 <title>CyberShop93 | Tenis y Perfumes Premium</title>
-<link rel="icon" type="image/png" href=logo.png">
+<link rel="icon" type="image/png" href="Images/logo.png">
 
 <link rel="stylesheet" href="style.css">
 
@@ -40,56 +40,91 @@ src="https://www.facebook.com/tr?id=1248549090456517&ev=PageView&noscript=1"
 <header>
 
 <div class="logo">
-<img src="logo.png" alt="CyberShop93">
+<img src="Images/logo.png" alt="CyberShop93">
 </div>
-
+<div class="buscador">
+    <input type="text" placeholder="🔍 Buscar productos...">
+</div>
 <button class="menu-btn" onclick="toggleMenu()">☰</button>
-
+<div class="carrito-icono" onclick="abrirCarrito()">
+    🛒
+    <span id="contador">0</span>
+</div>
 <nav id="menu">
 
-<a href="#inicio">Inicio</a>
+<a href="#inicio">🏠 Inicio</a>
 
-<a href="#tenis">Tenis</a>
+<a href="#tenis">👟 Tenis</a>
 
-<a href="#perfumes">Perfumes</a>
+<a href="#perfumes">🌸 Perfumes</a>
 
-<a href="#contacto">Contacto</a>
+<a href="#tecnologia">📱 Tecnología</a>
+
+<a href="#hogar">🏠 Hogar</a>
+
+<a href="#contacto">📞 Contacto</a>
 
 </nav>
 
 </header>
 
 <section class="hero" id="inicio">
+  <div class="hero-contenido">
 
-    <div class="hero-contenido">
+    <img src="Images/logo.png" class="hero-logo" alt="CyberShop93">
 
-        <img src="logo.png" class="hero-logo" alt="CyberShop93">
+    <div class="etiqueta">🔥 OFERTAS DE LA SEMANA 🔥</div>
 
-        <h1>CYBERSHOP93</h1>
+    <h1>CYBERSHOP93</h1>
 
-        <h2>👟 Tenis Premium | 🌸 Perfumes Exclusivos</h2>
-        <p class="frase">
-Las mejores marcas, calidad premium y pago contra entrega.
-</p>
+    <h2>👟 Tenis | 🌸 Perfumes | 📱 Tecnología</h2>
 
-        <p>
-            Compra con confianza.
-            <br>
-            🚚 Envíos a toda Colombia
-            <br>
-            💵 Pago contra entrega
-            <br>
-            ⭐ Calidad garantizada
-        </p>
+    <p class="frase">
+      Todo lo que buscas en un solo lugar.
+      Calidad Premium y pago contra entrega.
+    </p>
 
-        <a class="boton"
-        href="https://wa.me/573017627261?text=Hola%20CyberShop93,%20quiero%20hacer%20un%20pedido">
-            Comprar por WhatsApp
-        </a>
+    <p>
+      🚚 Envíos a toda Colombia<br>
+      💵 Pago contra entrega*<br>
+      🛡️ Garantía por defectos de fábrica
+    </p>
 
+    <a class="boton"
+      href="https://wa.me/573017627261?text=Hola%20CyberShop93,%20quiero%20hacer%20un%20pedido">
+      🛒 Comprar por WhatsApp
+    </a>
+
+  </div>
+</section>
+<section class="carrusel">
+  
+    <div class="slide activo">
+        <img src="Images/adidas-spezial.jpg" alt="Adidas Spezial">
+        <div class="texto-slide">
+            <h2>👟 Adidas Spezial</h2>
+            <p>Calidad Premium</p>
+        </div>
+    </div>
+
+    <div class="slide">
+        <img src="Images/khamrah.jpg" alt="Khamrah">
+        <div class="texto-slide">
+            <h2>🌸 Khamrah</h2>
+            <p>Fragancia exclusiva</p>
+        </div>
+    </div>
+
+    <div class="slide">
+        <img src="Images/jordan4.jpg" alt="Jordan 4">
+        <div class="texto-slide">
+            <h2>🔥 Jordan 4</h2>
+            <p>Los más vendidos</p>
+        </div>
     </div>
 
 </section>
+
 <section class="estadisticas">
 
     <div class="stat">
@@ -120,8 +155,8 @@ Las mejores marcas, calidad premium y pago contra entrega.
 
     <div class="productos">
 
-        <div class="card">
-            <img src="khamrah.jpg" alt="Khamrah">
+        <div class="card" data-categoria="perfume">
+            <img src="Images/khamrah.jpg" alt="Khamrah">
             <span class="etiqueta oferta">TOP VENTA</span>
             <h3>Khamrah</h3>
             <p>Uno de los perfumes más vendidos.</p>
@@ -129,12 +164,15 @@ Las mejores marcas, calidad premium y pago contra entrega.
             <a href="https://wa.me/573017627261?text=Hola%20CyberShop93,%20quiero%20comprar%20el%20perfume%20Khamrah">
             Comprar
             </a>
-
+<button class="agregar"
+onclick="agregarCarrito('Khamrah',180000)">
+🛒 Añadir al carrito
+</button>
         </div>
 
-        <div class="card">
+        <div class="card" data-categoria="tenis">
 
-            <img src="jordan4.jpg" alt="Jordan">
+            <img src="Images/jordan4.jpg" alt="Jordan">
 
             <span class="etiqueta">NUEVO</span>
 
@@ -147,12 +185,15 @@ Las mejores marcas, calidad premium y pago contra entrega.
             Comprar
 
             </a>
-
+<button class="agregar"
+onclick="agregarCarrito('Jordan 4',450000)">
+🛒 Añadir al carrito
+</button>
         </div>
 
-        <div class="card">
+        <div class="card" data-categoria="perfume">
 
-            <img src="moschino.jpg" alt="Moschino">
+            <img src="Images/moschino.jpg" alt="Moschino">
 
             <span class="etiqueta">POPULAR</span>
 
@@ -163,8 +204,11 @@ Las mejores marcas, calidad premium y pago contra entrega.
             <a href="https://wa.me/573017627261?text=Hola%20CyberShop93,%20quiero%20comprar%20el%20Moschino">
 
             Comprar
-
             </a>
+<button class="agregar"
+onclick="agregarCarrito('Moschino Toy 2',200000)">
+🛒 Añadir al carrito
+</button>
 
         </div>
 
@@ -172,33 +216,59 @@ Las mejores marcas, calidad premium y pago contra entrega.
 
 </section>
 
-
 <section id="tenis">
     <h2>👟 Tenis Premium</h2>
+<div class="buscador">
+    <input
+        type="text"
+        id="buscar"
+        placeholder="🔍 Buscar productos..."
+        onkeyup="buscarProductos()">
+</div>
+<div class="filtros">
 
+    <button onclick="filtrarProductos('todos')">Todos</button>
+
+    <button onclick="filtrarProductos('tenis')">👟 Tenis</button>
+
+    <button onclick="filtrarProductos('perfume')">🌸 Perfumes</button>
+
+</div>
     <div class="productos">
 
-        <div class="card">
-            <img src="adidas-spezial.jpg" alt="Adidas Spezial">
+        <div class="card" data-categoria="tenis">
+            <img src="Images/adidas-spezial.jpg" alt="Adidas Spezial">
             <span class="etiqueta">NUEVO</span>
             <h3>Adidas Spezial</h3>
             <p>Calidad Premium</p>
             <a href="https://wa.me/573017627261?text=Hola%20CyberShop93,%20quiero%20información%20sobre%20los%20Adidas%20Spezial">Comprar por WhatsApp</a>
+            <button class="agregar"
+onclick="agregarCarrito('Adidas Spezial',450000)">
+🛒 Añadir al carrito
+</button>
         </div>
 
-        <div class="card">
-            <img src="jordan4.jpg" alt="Jordan 4">
+        <div class="card" data-categoria="tenis">
+            <img src="Images/jordan4.jpg" alt="Jordan 4">
             <span class="etiqueta oferta">OFERTA</span>
             <h3>Jordan 4</h3>
             <p>Edición Premium</p>
             <a href="https://wa.me/573017627261?text=Hola%20CyberShop93,%20quiero%20comprar%20los%20Jordan%204">Comprar por WhatsApp</a>
+            <button class="agregar"
+onclick="agregarCarrito('Jordan 4',450000)">
+🛒 Añadir al carrito
+</button>
         </div>
 
-        <div class="card">
-            <img src="nike-running.jpg" alt="Nike Running">
+        <div class="card" data-categoria="tenis">
+            <img src="Images/nike-running.jpg" alt="Nike Running">
             <h3>Nike Running</h3>
             <p>Máxima comodidad</p>
             <a href="https://wa.me/573017627261?text=Hola%20CyberShop93,%20quiero%20información%20sobre%20los%20Nike%20Running">Comprar por WhatsApp</a>
+            <button class="agregar"
+onclick="agregarCarrito('nike-running',220000)">
+🛒 Añadir al carrito
+</button>
         </div>
 
     </div>
@@ -212,24 +282,30 @@ Las mejores marcas, calidad premium y pago contra entrega.
 
 <div class="productos">
 
-<div class="card">
+<div class="card" data-categoria="perfume">
 
-<img src="khamrah.jpg">
+<img src="Images/khamrah.jpg">
 
 <h3>Khamrah</h3>
 
 <a href="https://wa.me/573017627261">Comprar</a>
-
+<button class="agregar"
+onclick="agregarCarrito('Khamrah',180000)">
+🛒 Añadir al carrito
+</button>
 </div>
 
-<div class="card">
+<div class="card" data-categoria="perfume">
 
-<img src="moschino.jpg">
+<img src="Images/moschino.jpg">
 
 <h3>Moschino Toy 2</h3>
 
 <a href="https://wa.me/573017627261">Comprar</a>
-
+<button class="agregar"
+onclick="agregarCarrito('Moschino Toy 2',200000)"> 
+🛒 Añadir al carrito
+</button>
 </div>
 
 </section>
@@ -356,7 +432,7 @@ Las mejores marcas, calidad premium y pago contra entrega.
 </section>
 <footer id="contacto">
 
-    <img src="logo.png" class="footer-logo">
+    <img src="Images/logo.png" class="footer-logo">
 
     <h2>CyberShop93</h2>
 
@@ -423,5 +499,29 @@ target="_blank">
          alt="WhatsApp">
 
 </a>
+<div id="carrito" class="carrito">
+
+    <div class="carrito-contenido">
+
+        <span class="cerrar" onclick="cerrarCarrito()">✖</span>
+
+        <h2>🛒 Mi Carrito</h2>
+
+        <div id="lista-carrito">
+            <p>No has agregado productos.</p>
+        </div>
+
+        <h3>Total: $<span id="total">0</span></h3>
+
+<button id="btnWhatsapp" class="boton" onclick="finalizarPedido()">
+    Finalizar pedido por WhatsApp
+</button>
+            <button class="vaciar" onclick="vaciarCarrito()">
+🗑️ Vaciar carrito
+</button>
+        </a>
+
+    </div>
+</div>
 </body>
 </html>
