@@ -100,7 +100,7 @@ src="https://www.facebook.com/tr?id=1248549090456517&ev=PageView&noscript=1"
 <section class="carrusel">
   
     <div class="slide activo">
-        <img src="adidas-spezial.jpg" alt="Adidas Spezial">
+        <img src="adidas-spezial.jpg" alt="Adidas Spezial"onclick="abrirImagen(this.src)">
         <div class="texto-slide">
             <h2>👟 Adidas Spezial</h2>
             <p>Calidad Premium</p>
@@ -108,7 +108,7 @@ src="https://www.facebook.com/tr?id=1248549090456517&ev=PageView&noscript=1"
     </div>
 
     <div class="slide">
-        <img src="khamrah.jpg" alt="Khamrah">
+        <img src="khamrah.jpg" alt="Khamrah"onclick="abrirImagen(this.src)">
         <div class="texto-slide">
             <h2>🌸 Khamrah</h2>
             <p>Fragancia exclusiva</p>
@@ -116,7 +116,7 @@ src="https://www.facebook.com/tr?id=1248549090456517&ev=PageView&noscript=1"
     </div>
 
     <div class="slide">
-        <img src="jordan4.jpg" alt="Jordan 4">
+        <img src="jordan4.jpg" alt="Jordan 4"onclick="abrirImagen(this.src)">
         <div class="texto-slide">
             <h2>🔥 Jordan 4</h2>
             <p>Los más vendidos</p>
@@ -156,7 +156,7 @@ src="https://www.facebook.com/tr?id=1248549090456517&ev=PageView&noscript=1"
     <div class="productos">
 
         <div class="card" data-categoria="perfume">
-            <img src="khamrah.jpg" alt="Khamrah">
+            <img src="khamrah.jpg" alt="Khamrah"onclick="abrirImagen(this.src)">
             <span class="etiqueta oferta">TOP VENTA</span>
             <h3>Khamrah</h3>
             <p>Uno de los perfumes más vendidos.</p>
@@ -172,7 +172,7 @@ onclick="agregarCarrito('Khamrah',180000)">
 
         <div class="card" data-categoria="tenis">
 
-            <img src="jordan4.jpg" alt="Jordan">
+            <img src="jordan4.jpg" alt="Jordan"onclick="abrirImagen(this.src)">
 
             <span class="etiqueta">NUEVO</span>
 
@@ -193,7 +193,7 @@ onclick="agregarCarrito('Jordan 4',450000)">
 
         <div class="card" data-categoria="perfume">
 
-            <img src="moschino.jpg" alt="Moschino">
+            <img src="moschino.jpg" alt="Moschino"onclick="abrirImagen(this.src)">
 
             <span class="etiqueta">POPULAR</span>
 
@@ -232,36 +232,48 @@ onclick="agregarCarrito('Moschino Toy 2',200000)">
     <button onclick="filtrarProductos('tenis')">👟 Tenis</button>
 
     <button onclick="filtrarProductos('perfume')">🌸 Perfumes</button>
+    
+<section id="productos">
 
+<h2 class="titulo-catalogo">
+🔥 Catálogo Premium
+</h2>
+
+<p class="subtitulo">
+Encuentra los mejores tenis y perfumes premium con envío a toda Colombia.
+</p>
+
+<div class="productos">
 </div>
     <div class="productos">
 
         <div class="card" data-categoria="tenis">
-            <img src="adidas-spezial.jpg" alt="Adidas Spezial">
+            <img src="adidas-spezial.jpg" alt="Adidas Spezial"
+onclick="abrirImagen(this.src)">
             <span class="etiqueta">NUEVO</span>
             <h3>Adidas Spezial</h3>
             <p>Calidad Premium</p>
             <a href="https://wa.me/573017627261?text=Hola%20CyberShop93,%20quiero%20información%20sobre%20los%20Adidas%20Spezial">Comprar por WhatsApp</a>
             <button class="agregar"
-onclick="agregarCarrito('Adidas Spezial',450000)">
+onclick="agregarCarrito('Adidas Spezial',230000)">
 🛒 Añadir al carrito
 </button>
         </div>
 
         <div class="card" data-categoria="tenis">
-            <img src="jordan4.jpg" alt="Jordan 4">
+            <img src="jordan4.jpg" alt="Jordan 4"onclick="abrirImagen(this.src)">
             <span class="etiqueta oferta">OFERTA</span>
             <h3>Jordan 4</h3>
             <p>Edición Premium</p>
             <a href="https://wa.me/573017627261?text=Hola%20CyberShop93,%20quiero%20comprar%20los%20Jordan%204">Comprar por WhatsApp</a>
             <button class="agregar"
-onclick="agregarCarrito('Jordan 4',450000)">
+onclick="agregarCarrito('Jordan 4',230000)">
 🛒 Añadir al carrito
 </button>
         </div>
 
         <div class="card" data-categoria="tenis">
-            <img src="nike-running.jpg" alt="Nike Running">
+            <img src="nike-running.jpg" alt="Nike Running"onclick="abrirImagen(this.src)">
             <h3>Nike Running</h3>
             <p>Máxima comodidad</p>
             <a href="https://wa.me/573017627261?text=Hola%20CyberShop93,%20quiero%20información%20sobre%20los%20Nike%20Running">Comprar por WhatsApp</a>
@@ -270,11 +282,178 @@ onclick="agregarCarrito('nike-running',220000)">
 🛒 Añadir al carrito
 </button>
         </div>
+<div class="card">
 
+    <span class="etiqueta vendido">MÁS VENDIDO</span>
+
+    <img src="asad.jpg" alt="Lattafa Asad"onclick="abrirImagen(this.src)">
+    
+    <h3>Lattafa Asad</h3>
+<div class="estrellas">
+★★★★★
+</div>
+    <p>$170.000</p>
+
+    <button class="agregar"
+    onclick="agregarCarrito('Lattafa Asad',170000)">
+        Agregar al carrito
+    </button>
+
+</div>
+
+<div class="card">
+
+    <span class="etiqueta nuevo">NUEVO</span>
+
+    <img src="9pm.jpg" alt="Afnan 9PM"onclick="abrirImagen(this.src)">
+
+    <h3>Afnan 9PM</h3>
+<div class="estrellas">
+★★★★★
+</div>
+    <p>$170.000</p>
+
+    <button class="agregar"
+    onclick="agregarCarrito('Afnan 9PM',170000)">
+        Agregar al carrito
+    </button>
+
+</div>
+
+<div class="card">
+
+    <span class="etiqueta oferta">OFERTA</span>
+
+    <img src="clubdenuit.jpg" alt="Club de Nuit Intense"onclick="abrirImagen(this.src)">
+
+    <h3>Club de Nuit Intense</h3>
+<div class="estrellas">
+★★★★★
+</div>
+    <p>$170.000</p>
+
+    <button class="agregar"
+    onclick="agregarCarrito('Club de Nuit Intense',170000)">
+        Agregar al carrito
+    </button>
+
+</div>
+
+<div class="card">
+
+    <span class="etiqueta nuevo">NUEVO</span>
+
+    <img src="yara.jpg" alt="Yara Lattafa"onclick="abrirImagen(this.src)">
+
+    <h3>Yara Lattafa</h3>
+<div class="estrellas">
+★★★★★
+</div>
+    <p>$160.000</p>
+
+    <button class="agregar"
+    onclick="agregarCarrito('Yara Lattafa',160000)">
+        Agregar al carrito
+    </button>
+
+</div>
+
+<div class="card">
+
+    <span class="etiqueta vendido">MÁS VENDIDO</span>
+
+    <img src="hawas.jpg" alt="Rasasi Hawas"onclick="abrirImagen(this.src)">
+
+    <h3>Rasasi Hawas</h3>
+<div class="estrellas">
+★★★★★
+</div>
+    <p>$180.000</p>
+
+    <button class="agregar"
+    onclick="agregarCarrito('Rasasi Hawas',180000)">
+        Agregar al carrito
+    </button>
+
+<div class="card">
+
+    <span class="etiqueta nuevo">NUEVO</span>
+
+    <img src="nike-airforce1.jpg" alt="Nike Air Force 1"onclick="abrirImagen(this.src)">
+
+<h3>Nike Air Force 1</h3>
+
+<div class="estrellas">
+★★★★★
+</div>
+
+<p>$230.000</p>
+
+    <button class="agregar"
+    onclick="agregarCarrito('Nike Air Force 1',230000)">
+        Agregar al carrito
+    </button>
+
+</div>
+
+<div class="card">
+
+    <span class="etiqueta oferta">OFERTA</span>
+
+    <img src="newbalance530.jpg" alt="New Balance 530"onclick="abrirImagen(this.src)">
+
+    <h3>New Balance 530</h3>
+<div class="estrellas">
+★★★★★
+</div>
+    <p>$240.000</p>
+
+    <button class="agregar"
+    onclick="agregarCarrito('New Balance 530',240000)">
+        Agregar al carrito
+    </button>
+
+</div>
+
+<div class="card">
+
+    <span class="etiqueta vendido">MÁS VENDIDO</span>
+
+    <img src="puma-palermo.jpg" alt="Puma Palermo"onclick="abrirImagen(this.src)">
+
+    <h3>Puma Palermo</h3>
+<div class="estrellas">
+★★★★★
+</div>
+    <p>$230.000</p>
+
+    <button class="agregar"
+    onclick="agregarCarrito('Puma Palermo',230000)">
+        Agregar al carrito
+    </button>
+
+</div>
+
+<div class="card">
+
+    <span class="etiqueta nuevo">NUEVO</span>
+
+    <img src="nike-dunklow.jpg" alt="Nike Dunk Low"onclick="abrirImagen(this.src)">
+
+    <h3>Nike Dunk Low</h3>
+<div class="estrellas">
+★★★★★
+</div>
+    <p>$240.000</p>
+
+    <button class="agregar"
+    onclick="agregarCarrito('Nike Dunk Low',240000)">
+        Agregar al carrito
+    </button>
+
+</div>
     </div>
 </section>
-
-
 
 <section id="perfumes">
 
@@ -284,7 +463,7 @@ onclick="agregarCarrito('nike-running',220000)">
 
 <div class="card" data-categoria="perfume">
 
-<img src="khamrah.jpg">
+<img src="khamrah.jpg"onclick="abrirImagen(this.src)">
 
 <h3>Khamrah</h3>
 
@@ -297,13 +476,13 @@ onclick="agregarCarrito('Khamrah',180000)">
 
 <div class="card" data-categoria="perfume">
 
-<img src="moschino.jpg">
+<img src="moschino.jpg"onclick="abrirImagen(this.src)">
 
 <h3>Moschino Toy 2</h3>
 
 <a href="https://wa.me/573017627261">Comprar</a>
 <button class="agregar"
-onclick="agregarCarrito('Moschino Toy 2',200000)"> 
+onclick="agregarCarrito('Moschino Toy 2',160000)"> 
 🛒 Añadir al carrito
 </button>
 </div>
@@ -522,6 +701,16 @@ target="_blank">
         </a>
 
     </div>
+</div>
+<div id="visor" class="visor">
+
+    <span class="cerrar-visor"
+    onclick="cerrarImagen()">
+        ✖
+    </span>
+
+    <img id="imagenGrande">
+
 </div>
 </body>
 </html>
